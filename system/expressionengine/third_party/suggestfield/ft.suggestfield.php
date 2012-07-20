@@ -108,7 +108,7 @@ CSS;
     {
     	return <<<JS
 jQuery(document).ready(function($) {
-	$('.suggestfield_autosuggest').typeahead({
+	$('input[name="field_id_{$this->field_id}"]').typeahead({
 		'source': {$datasource},
 		'items': 10
 	});    	
